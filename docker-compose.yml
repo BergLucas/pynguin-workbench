@@ -1,0 +1,13 @@
+name: pynguin-workbench
+
+services:
+  pynguin:
+    image: pynguin:latest
+    build:
+      context: pynguin
+      dockerfile: docker/Dockerfile
+    command: $COMMAND
+    volumes:
+      - ./input:/input:ro
+      - ./output:/output:rw
+      - ./package:/package:ro
