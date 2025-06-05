@@ -3,3 +3,6 @@ input/*
 
 output/*
 !output/.gitkeep
+
+package/*
+!package/.gitkeep
