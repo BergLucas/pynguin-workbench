@@ -2,6 +2,7 @@ name: pynguin-workbench
 
 services:
   pynguin:
+    container_name: pynguin
     image: pynguin:latest
     build:
       context: pynguin
