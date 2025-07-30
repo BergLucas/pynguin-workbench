@@ -2,6 +2,10 @@
 setup:
 	conda env update --prune -f environment.yml
 
+.PHONY: setup-3.11
+setup-3.11:
+	conda env update --prune -f environment-3.11.yml
+
 .PHONY: setup-3.12
 setup-3.12:
 	conda env update --prune -f environment-3.12.yml
@@ -9,6 +13,11 @@ setup-3.12:
 .PHONY: install
 install:
 	poetry -C pynguin env use python3.10
+	make -C pynguin install
+
+.PHONY: install-3.11
+install-3.11:
+	poetry -C pynguin env use python3.11
 	make -C pynguin install
 
 .PHONY: install-3.12
