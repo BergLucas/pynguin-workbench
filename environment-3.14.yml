@@ -1,0 +1,8 @@
+name: pynguin-workbench-3.14
+
+dependencies:
+  - python=3.14.0
+
+variables:
+  PYNGUIN_DANGER_AWARE: 1
+  PYTHONHASHSEED: 0
