@@ -12,3 +12,7 @@ services:
       - ./input:/input:ro
       - ./output:/output:rw
       - ./package:/package:ro
+      - pip-cache:/root/.cache/pip
+
+volumes:
+  pip-cache:
