@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
 
-arguments="$@"
-
-echo "pynguin $arguments"
-
-COMMAND="$arguments" docker compose up --build --force-recreate
+COMMAND="$@" docker compose up --build --force-recreate
