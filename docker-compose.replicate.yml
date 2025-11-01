@@ -1,0 +1,4 @@
+services:
+  pynguin:
+    volumes:
+      - $PACKAGE_FILEPATH:/package/package.txt:ro

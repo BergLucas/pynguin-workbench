@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+run_path="$1"
+
+COMMAND=$(tr "\n" " " < "$run_path/pynguin-cli-params.txt") PACKAGE_FILEPATH="$run_path/requirements.txt" docker compose -f docker-compose.yml -f docker-compose.replicate.yml up --build --force-recreate

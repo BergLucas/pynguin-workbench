@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-pynguin_cli_params_filepath="$1"
-
-arguments=$(tr '\n' ' ' < "$pynguin_cli_params_filepath")
-
-./docker-pynguin "${arguments}"
